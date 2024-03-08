@@ -13,18 +13,18 @@
             padding: 0;
         }
         body {
-            font-family: Arial, sans-serif;
+            font-family: Arial;
             background-color: #0c0c0c;
-            color: #fff;
-            line-height: 1.6;
+            color: #ffffff;
+            line-height: 1.3;
         }
         header {
             background-color: #6a0dad;
-            padding: 20px 0;
+            padding: 10px;
             text-align: center;
         }
         h1 {
-            font-family: 'Monoton', cursive;
+            font-family: arial;
             font-size: 2.5rem;
             margin-bottom: 10px;
             color: #fff;
@@ -55,11 +55,18 @@
             border: none;
             border-radius: 5px;
             font-size: 1rem;
-            text-decoration: none;
             transition: background-color 0.3s ease;
         }
         .btn:hover {
-            background-color: #4c0966;
+            background-color: #ffffff;
+            border-color: #6a0dad;
+            border-width: 3px;
+            border-style: solid;
+            color: #6a0dad;
+            border-style: solid;
+            transition: 0.8s;
+            
+
         }
         .plans {
             display: flex;
@@ -78,24 +85,93 @@
             transition: transform 0.3s ease;
         }
         .plan:hover {
-            transform: translateY(-10px);
+            background-color: #4d4949;
+            border-color: #ffffff;
+            color: #f6f6f6;
+            border-style: solid;
+            transition: 0.8s;
+        }
+
+        .plan:active {
+            background-color: #4d4949;
+            border-color: #ffffff;
+            color: #f6f6f6;
+            border-style: solid;
+            transition: 0.8s;
+            opacity: 0.5;
         }
         .plan h3 {
             margin-bottom: 10px;
             font-size: 1.5rem;
-            color: #6a0dad;
+            color: #ffffff;
         }
         .plan p {
             margin-bottom: 20px;
         }
         footer {
-            background-color: #1e1e1e;
+            background-color: #6e00d4;
+            opacity: 0.5s;
             color: #fff;
-            padding: 20px 0;
+            padding: 15px;
             text-align: center;
             position: fixed;
-            bottom: 0;
+            bottom: 1;
             width: 100%;
+
+        }
+
+        .faq-question {
+            background-color: #6e00d4;
+            padding: 20px;
+            border-radius: 10px;
+            padding-right: 10px;
+            font-size: large;
+            font-family: helvetica;
+            font-weight: bold;
+        }
+
+        .faq-question:hover {
+            border-color: #6e00d4;
+            background-color: #ffffff;
+            color: black;
+            transition: 0.5s;
+            cursor: pointer;
+        }
+
+        .faq-question:active {
+            border-color: #6e00d4;
+            background-color: #b9afaf;
+            color: black;
+            opacity: 0.7;
+            transition: 0.5s;
+            cursor: pointer;
+        }
+
+        .faq-answer {
+            background-color: #ffffff;
+            color: black;
+            border-radius: 1px;
+            font-family: arial;
+            font-weight: lighter;
+            cursor: pointer;
+        }
+
+        .footer-baixo {
+            background-color: white;
+            padding: 15px;
+            font-size: 15px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: lighter;
+            color: rgb(81, 79, 79);
+            text-align: center;
+            border-color:#6e00d4;
+            border-width: 1px;
+            border-style: solid;
+        
+        }
+
+        .esp {
+            color: black;
         }
     </style>
 </head>
@@ -103,13 +179,6 @@
 
 <header>
     <h1>TvMaster IPTV</h1>
-    <nav>
-        <a href="#">.</a>
-        <a href="#">.</a>
-        <a href="#">.</a>
-        <a href="#">.</a>
-        <a href="#">.</a>
-    </nav>
 </header>
 
 <section>
@@ -153,9 +222,7 @@
 </footer>
 
 </body>
-</html>
-    }
-  </style>
+
 </head>
 <body>
   <div class="container">
@@ -181,3 +248,8 @@
         <p>Algumas vantagens dos nossos serviços incluem uma ampla seleção de canais, a capacidade de assistir a programação em qualquer dispositivo conectado à Internet e recursos avançados, como vídeo sob demanda e gravação de programas.</p>
       </div>
     </div>
+
+    <p class="esp">- - - - - - - - - - - - - - - - -</p>
+    <p class="esp">- - - - - - - - - - - - - - - - -</p>
+
+    <p class="footer-baixo">Todos Direitos Reservados - TvMaster</p>
